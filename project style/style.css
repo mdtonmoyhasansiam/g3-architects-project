@@ -146,12 +146,17 @@ main{
 
 .love-enjoy{
     display: flex;
-    gap: 54px;
+    gap: 140px;
 }
 
 .love-enjoy-container{
     margin-top: 130px;
     max-width: 586px;
+}
+
+#love-enjoy-border {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
 }
 
 .love-enjoy-container h3{
@@ -187,6 +192,19 @@ main{
 .love-enjoy-img img{
     width: 704px;
     height: 982px;
+}
+
+#btn-badge{
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
 .some-facts h2{
@@ -259,7 +277,7 @@ footer{
     background-color: rgba(255, 244, 231, 1);
     margin: 0 auto;
     margin-top: 130px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 footer p{
@@ -284,6 +302,24 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
+    .love-enjoy{
+        flex-direction: column;
+    }
+    .love-enjoy-img img{
+        width: 100%;
+    }
+    #btn-badge{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -5px;
+    margin-top: -70px;
+    }
     .some-facts{
         text-align: center;
     }
@@ -306,6 +342,27 @@ footer p{
 @media screen and (min-width:576px) and (max-width:992px) {
     .feature{
         flex-direction: column;
+    }
+    .love-enjoy{
+        flex-direction: column;
+    }
+    .love-enjoy-container{
+        margin: 0 auto;
+    }
+    .love-enjoy-img img{
+        width: 100%;
+    }
+    #btn-badge{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -50px;
+    margin-top: -70px;
     }
     .some-facts{
         text-align: center;
