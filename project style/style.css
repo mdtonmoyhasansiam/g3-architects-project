@@ -147,6 +147,7 @@ main{
 .some-facts h2{
     font-size: 2.8rem;
     font-weight: bold;
+    margin-top: 130px;
 }
 
 .some-facts p{
@@ -158,6 +159,7 @@ main{
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .facts-item{
@@ -183,17 +185,6 @@ main{
     margin-top: 5px;
 }
 
-
-/* .facts-item .facts-number{
-    font-size: 2.8rem;
-    font-weight: 600;
-} */
-
-/* .facts-item .facts-info{
-    font-size: 1.2rem;
-    font-weight: 600;
-} */
-
 /* Responsive media query  */
 
 @media screen and (max-width: 576px) {
@@ -209,6 +200,12 @@ main{
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-item{
+        margin: 0 auto;
+    }
 }
 
 /* Medium size device */
@@ -216,6 +213,14 @@ main{
 @media screen and (min-width:576px) and (max-width:992px) {
     .feature{
         flex-direction: column;
+    }
+
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facts-item{
+        margin: 0 auto;
     }
 
     .feature-img{
